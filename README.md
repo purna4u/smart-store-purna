@@ -33,10 +33,9 @@ Ran the following scripts
     py -m pip install --upgrade -r requirements.txt --timeout 100
     py scripts/data_prep.py
 
-Ran the following scripts to push changes to Github repo.
-git add .
-git commit -m "ran initial data_prep.py"
-git push -u origin main
+## Installed Pandas and loguru. Here are the commands
+    pip install loguru
+    pip install pandas
 
 To run the data_prep.py script in Windows PowerShell terminal:
 
