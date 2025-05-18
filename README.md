@@ -1,7 +1,7 @@
 # smart-store-purna
 
 
-# Section 03 - Smart Sales Project
+## Smart Sales Project
 
 ## Observations after exploring the data:
 
@@ -16,7 +16,7 @@
 - **Minimum sales**: 50
 - **Maximum sales**: 300
 
-
+### P2. BI Python w/External Packages (.venv, execute, add-commit-push)
 Module 2 Assignment for CSIS 44632
 
 Module 2 Changes
