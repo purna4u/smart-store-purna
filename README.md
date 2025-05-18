@@ -34,14 +34,21 @@ Ran the following scripts
     py scripts/data_prep.py
 
 Ran the following scripts to push changes to Github repo.
-    git add .
-    git commit -m "ran initial data_prep.py"
-    git push -u origin main
+git add .
+git commit -m "ran initial data_prep.py"
+git push -u origin main
 
-In Windows PowerShell terminal, run the following command to run the data_prep python file:
+To run the data_prep.py script in Windows PowerShell terminal:
 
+```bash
 py scripts\data_prep.py
 
 
+Ran the following scripts to push changes to Github repo:
+
+```bash
+git add .
+git commit -m "ran initial data_prep.py"
+git push -u origin main
 
 
