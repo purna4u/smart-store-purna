@@ -46,9 +46,11 @@ py scripts\data_prep.py
 
 Ran the following scripts to push changes to Github repo:
 
-```bash
+
 git add .
 git commit -m "ran initial data_prep.py"
 git push -u origin main
+
+
 
 
