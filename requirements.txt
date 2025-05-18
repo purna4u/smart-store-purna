@@ -1,0 +1,2 @@
+-Install Pandas
+-Install Loguru
