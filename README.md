@@ -51,5 +51,33 @@ git commit -m "ran initial data_prep.py"
 git push -u origin main
 
 
+### Module 3:
+
+## Updates Made
+
+As part of this assignment, additional columns were added to each dataset:
+
+### Customers Data (`customers_data.csv`)
+- **Numeric Column**: `LoyaltyPoints` – Represents points accumulated by each customer
+- **Category Column**: `PreferredContactMethod` – Indicates whether the customer prefers Email, Phone, or Text
+
+### Products Data (`products_data.csv`)
+- **Numeric Column**: `StockQuantity` – Number of units available in inventory
+- **Category Column**: `Subcategory` – Product grouping such as Electronics, Apparel, or Grocery
+
+### Sales Data (`sales_data.csv`)
+- **Numeric Column**: `DiscountPercent` – Percentage of discount applied to the transaction
+- **Category Column**: `PaymentType` – Method of payment such as CreditCard, Cash, or PayPal
+
+## Tools Used
+
+- Python
+- VS Code
+- Git & GitHub
+- Excel (for simple data editing)
+
+
+
+
 
 
