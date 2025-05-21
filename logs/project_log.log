@@ -12,3 +12,216 @@
 2025-05-17 23:39:27.757 | INFO     | __main__:process_data:59 - Data shape (ct of rows, ct of columns): (2001, 7).
 2025-05-17 23:39:27.757 | INFO     | __main__:process_data:60 - Data columns: ['TransactionID', 'SaleDate', 'CustomerID', 'ProductID', 'StoreID', 'CampaignID', 'SaleAmount'].
 2025-05-17 23:39:27.757 | INFO     | __main__:main:84 - Data preparation complete.
+2025-05-20 22:53:59.517 | INFO     | __main__:main:171 - ==================================
+2025-05-20 22:53:59.517 | INFO     | __main__:main:172 - STARTING prepare_customers_data.py
+2025-05-20 22:53:59.517 | INFO     | __main__:main:173 - ==================================
+2025-05-20 22:53:59.517 | INFO     | __main__:main:175 - Root         : /Users/purnabiswa/Repo/smart-store-purna
+2025-05-20 22:53:59.517 | INFO     | __main__:main:176 - data/raw     : /Users/purnabiswa/Repo/smart-store-purna/data/raw
+2025-05-20 22:53:59.517 | INFO     | __main__:main:177 - data/prepared: /Users/purnabiswa/Repo/smart-store-purna/data/prepared
+2025-05-20 22:53:59.517 | INFO     | __main__:main:178 - scripts      : /Users/purnabiswa/Repo/smart-store-purna/scripts
+2025-05-20 22:53:59.517 | INFO     | __main__:read_raw_data:58 - READING: /Users/purnabiswa/Repo/smart-store-purna/data/raw/customers_data.csv.
+2025-05-20 22:53:59.524 | INFO     | __main__:main:190 - Initial dataframe columns: customers_data
+2025-05-20 22:53:59.524 | INFO     | __main__:main:191 - Initial dataframe shape: (202, 1)
+2025-05-20 22:53:59.525 | INFO     | __main__:remove_duplicates:94 - FUNCTION START: remove_duplicates with dataframe shape=(202, 1)
+2025-05-20 22:53:59.526 | INFO     | __main__:remove_duplicates:105 - Original dataframe shape: (202, 1)
+2025-05-20 22:53:59.526 | INFO     | __main__:remove_duplicates:106 - Deduped  dataframe shape: (3, 1)
+2025-05-20 22:53:59.526 | INFO     | __main__:handle_missing_values:122 - FUNCTION START: handle_missing_values with dataframe shape=(3, 1)
+2025-05-20 22:53:59.527 | INFO     | __main__:handle_missing_values:126 - Total missing values before handling: 0
+2025-05-20 22:53:59.527 | INFO     | __main__:handle_missing_values:135 - Total missing values after handling: 0
+2025-05-20 22:53:59.527 | INFO     | __main__:handle_missing_values:136 - 3 records remaining after handling missing values.
+2025-05-20 22:53:59.527 | INFO     | __main__:remove_outliers:150 - FUNCTION START: remove_outliers with dataframe shape=(3, 1)
+2025-05-20 22:53:59.527 | INFO     | __main__:remove_outliers:158 - Removed 0 outlier rows
+2025-05-20 22:53:59.527 | INFO     | __main__:remove_outliers:159 - 3 records remaining after removing outliers.
+2025-05-20 22:53:59.527 | INFO     | __main__:save_prepared_data:76 - FUNCTION START: save_prepared_data with file_name=customers_prepared.csv, dataframe shape=(3, 1)
+2025-05-20 22:53:59.529 | INFO     | __main__:save_prepared_data:79 - Data saved to /Users/purnabiswa/Repo/smart-store-purna/data/prepared/customers_prepared.csv
+2025-05-20 22:53:59.530 | INFO     | __main__:main:214 - ==================================
+2025-05-20 22:53:59.530 | INFO     | __main__:main:215 - Original shape: (3, 1)
+2025-05-20 22:53:59.530 | INFO     | __main__:main:216 - Cleaned shape:  (202, 1)
+2025-05-20 22:53:59.530 | INFO     | __main__:main:217 - ==================================
+2025-05-20 22:53:59.530 | INFO     | __main__:main:218 - FINISHED prepare_customers_data.py
+2025-05-20 22:53:59.530 | INFO     | __main__:main:219 - ==================================
+2025-05-20 22:58:15.356 | INFO     | __main__:main:232 - ==================================
+2025-05-20 22:58:15.356 | INFO     | __main__:main:233 - STARTING prepare_products_data.py
+2025-05-20 22:58:15.356 | INFO     | __main__:main:234 - ==================================
+2025-05-20 22:58:15.356 | INFO     | __main__:main:236 - Root         : /Users/purnabiswa/Repo/smart-store-purna
+2025-05-20 22:58:15.356 | INFO     | __main__:main:237 - data/raw     : /Users/purnabiswa/Repo/smart-store-purna/data/raw
+2025-05-20 22:58:15.356 | INFO     | __main__:main:238 - data/prepared: /Users/purnabiswa/Repo/smart-store-purna/data/prepared
+2025-05-20 22:58:15.356 | INFO     | __main__:main:239 - scripts      : /Users/purnabiswa/Repo/smart-store-purna/scripts
+2025-05-20 22:58:15.356 | INFO     | __main__:read_raw_data:64 - FUNCTION START: read_raw_data with file_name=products_data.csv
+2025-05-20 22:58:15.356 | INFO     | __main__:read_raw_data:66 - Reading data from /Users/purnabiswa/Repo/smart-store-purna/data/raw/products_data.csv
+2025-05-20 22:58:15.363 | INFO     | __main__:read_raw_data:68 - Loaded dataframe with 101 rows and 1 columns
+2025-05-20 22:58:15.364 | INFO     | __main__:read_raw_data:64 - FUNCTION START: read_raw_data with file_name=products_data.csv
+2025-05-20 22:58:15.364 | INFO     | __main__:read_raw_data:66 - Reading data from /Users/purnabiswa/Repo/smart-store-purna/data/raw/products_data.csv
+2025-05-20 22:58:15.365 | INFO     | __main__:read_raw_data:68 - Loaded dataframe with 101 rows and 1 columns
+2025-05-20 22:58:15.365 | INFO     | __main__:main:254 - Initial dataframe columns: products_data
+2025-05-20 22:58:15.365 | INFO     | __main__:main:255 - Initial dataframe shape: (101, 1)
+2025-05-20 22:58:15.365 | INFO     | __main__:remove_duplicates:101 - FUNCTION START: remove_duplicates with dataframe shape=(101, 1)
+2025-05-20 22:58:15.367 | INFO     | __main__:remove_duplicates:111 - Removed 96 duplicate rows
+2025-05-20 22:58:15.367 | INFO     | __main__:remove_duplicates:112 - 5 records remaining after removing duplicates.
+2025-05-20 22:58:15.367 | INFO     | __main__:handle_missing_values:126 - FUNCTION START: handle_missing_values with dataframe shape=(5, 1)
+2025-05-20 22:58:15.367 | INFO     | __main__:handle_missing_values:131 - Missing values by column before handling:
+products_data    0
+dtype: int64
+2025-05-20 22:58:15.367 | INFO     | __main__:handle_missing_values:145 - Missing values by column after handling:
+products_data    0
+dtype: int64
+2025-05-20 22:58:15.367 | INFO     | __main__:handle_missing_values:146 - 5 records remaining after handling missing values.
+2025-05-20 22:58:15.368 | INFO     | __main__:remove_outliers:160 - FUNCTION START: remove_outliers with dataframe shape=(5, 1)
+2025-05-20 22:58:15.368 | INFO     | __main__:remove_outliers:179 - Removed 0 outlier rows
+2025-05-20 22:58:15.368 | INFO     | __main__:remove_outliers:180 - 5 records remaining after removing outliers.
+2025-05-20 22:58:15.368 | INFO     | __main__:validate_data:216 - FUNCTION START: validate_data with dataframe shape=(5, 1)
+2025-05-20 22:58:15.368 | INFO     | __main__:validate_data:225 - Data validation complete
+2025-05-20 22:58:15.368 | INFO     | __main__:standardize_formats:193 - FUNCTION START: standardize_formats with dataframe shape=(5, 1)
+2025-05-20 22:58:15.368 | INFO     | __main__:standardize_formats:203 - Completed standardizing formats
+2025-05-20 22:58:15.368 | INFO     | __main__:save_prepared_data:86 - FUNCTION START: save_prepared_data with file_name=products_prepared.csv, dataframe shape=(5, 1)
+2025-05-20 22:58:15.370 | INFO     | __main__:save_prepared_data:89 - Data saved to /Users/purnabiswa/Repo/smart-store-purna/data/prepared/products_prepared.csv
+2025-05-20 22:58:15.370 | INFO     | __main__:main:284 - ==================================
+2025-05-20 22:58:15.370 | INFO     | __main__:main:285 - Original shape: (5, 1)
+2025-05-20 22:58:15.370 | INFO     | __main__:main:286 - Cleaned shape:  (101, 1)
+2025-05-20 22:58:15.370 | INFO     | __main__:main:287 - ==================================
+2025-05-20 22:58:15.370 | INFO     | __main__:main:288 - FINISHED prepare_products_data.py
+2025-05-20 22:58:15.370 | INFO     | __main__:main:289 - ==================================
+2025-05-20 22:58:32.245 | INFO     | __main__:main:163 - ==================================
+2025-05-20 22:58:32.245 | INFO     | __main__:main:164 - STARTING prepare_customers_data.py
+2025-05-20 22:58:32.245 | INFO     | __main__:main:165 - ==================================
+2025-05-20 22:58:32.245 | INFO     | __main__:main:167 - Root         : /Users/purnabiswa/Repo/smart-store-purna
+2025-05-20 22:58:32.245 | INFO     | __main__:main:168 - data/raw     : /Users/purnabiswa/Repo/smart-store-purna/data/raw
+2025-05-20 22:58:32.245 | INFO     | __main__:main:169 - data/prepared: /Users/purnabiswa/Repo/smart-store-purna/data/prepared
+2025-05-20 22:58:32.245 | INFO     | __main__:main:170 - scripts      : /Users/purnabiswa/Repo/smart-store-purna/scripts
+2025-05-20 22:58:32.245 | INFO     | __main__:read_raw_data:50 - READING: /Users/purnabiswa/Repo/smart-store-purna/data/raw/customers_data.csv.
+2025-05-20 22:58:32.251 | INFO     | __main__:main:182 - Initial dataframe columns: customers_data
+2025-05-20 22:58:32.251 | INFO     | __main__:main:183 - Initial dataframe shape: (202, 1)
+2025-05-20 22:58:32.252 | INFO     | __main__:remove_duplicates:86 - FUNCTION START: remove_duplicates with dataframe shape=(202, 1)
+2025-05-20 22:58:32.254 | INFO     | __main__:remove_duplicates:97 - Original dataframe shape: (202, 1)
+2025-05-20 22:58:32.254 | INFO     | __main__:remove_duplicates:98 - Deduped  dataframe shape: (3, 1)
+2025-05-20 22:58:32.254 | INFO     | __main__:handle_missing_values:114 - FUNCTION START: handle_missing_values with dataframe shape=(3, 1)
+2025-05-20 22:58:32.254 | INFO     | __main__:handle_missing_values:118 - Total missing values before handling: 0
+2025-05-20 22:58:32.254 | INFO     | __main__:handle_missing_values:127 - Total missing values after handling: 0
+2025-05-20 22:58:32.255 | INFO     | __main__:handle_missing_values:128 - 3 records remaining after handling missing values.
+2025-05-20 22:58:32.255 | INFO     | __main__:remove_outliers:142 - FUNCTION START: remove_outliers with dataframe shape=(3, 1)
+2025-05-20 22:58:32.255 | INFO     | __main__:remove_outliers:150 - Removed 0 outlier rows
+2025-05-20 22:58:32.255 | INFO     | __main__:remove_outliers:151 - 3 records remaining after removing outliers.
+2025-05-20 22:58:32.255 | INFO     | __main__:save_prepared_data:68 - FUNCTION START: save_prepared_data with file_name=customers_prepared.csv, dataframe shape=(3, 1)
+2025-05-20 22:58:32.257 | INFO     | __main__:save_prepared_data:71 - Data saved to /Users/purnabiswa/Repo/smart-store-purna/data/prepared/customers_prepared.csv
+2025-05-20 22:58:32.257 | INFO     | __main__:main:206 - ==================================
+2025-05-20 22:58:32.257 | INFO     | __main__:main:207 - Original shape: (3, 1)
+2025-05-20 22:58:32.257 | INFO     | __main__:main:208 - Cleaned shape:  (202, 1)
+2025-05-20 22:58:32.257 | INFO     | __main__:main:209 - ==================================
+2025-05-20 22:58:32.257 | INFO     | __main__:main:210 - FINISHED prepare_customers_data.py
+2025-05-20 22:58:32.257 | INFO     | __main__:main:211 - ==================================
+2025-05-20 23:03:05.845 | INFO     | __main__:main:89 - ==================================
+2025-05-20 23:03:05.845 | INFO     | __main__:main:90 - STARTING prepare_sales_data.py
+2025-05-20 23:03:05.845 | INFO     | __main__:main:91 - ==================================
+2025-05-20 23:03:05.845 | INFO     | __main__:main:93 - Root         : /Users/purnabiswa/Repo/smart-store-purna
+2025-05-20 23:03:05.845 | INFO     | __main__:main:94 - data/raw     : /Users/purnabiswa/Repo/smart-store-purna/data/raw
+2025-05-20 23:03:05.845 | INFO     | __main__:main:95 - data/prepared: /Users/purnabiswa/Repo/smart-store-purna/data/prepared
+2025-05-20 23:03:05.845 | INFO     | __main__:main:96 - scripts      : /Users/purnabiswa/Repo/smart-store-purna/scripts
+2025-05-20 23:03:05.845 | INFO     | __main__:read_raw_data:66 - FUNCTION START: read_raw_data with file_name=sales_data.csv
+2025-05-20 23:03:05.845 | INFO     | __main__:read_raw_data:68 - Reading data from /Users/purnabiswa/Repo/smart-store-purna/data/raw/sales_data.csv
+2025-05-20 23:03:05.855 | INFO     | __main__:read_raw_data:70 - Loaded dataframe with 2002 rows and 1 columns
+2025-05-20 23:03:05.855 | INFO     | __main__:main:108 - Initial dataframe columns: sales_data
+2025-05-20 23:03:05.855 | INFO     | __main__:main:109 - Initial dataframe shape: (2002, 1)
+2025-05-20 23:03:05.859 | INFO     | __main__:main:131 - Saved cleaned data to: /Users/purnabiswa/Repo/smart-store-purna/data/prepared/sales_prepared.csv
+2025-05-20 23:03:05.859 | INFO     | __main__:main:133 - ==================================
+2025-05-20 23:03:05.859 | INFO     | __main__:main:134 - Original shape: (2002, 1)
+2025-05-20 23:03:05.859 | INFO     | __main__:main:135 - Cleaned shape:  (2002, 1)
+2025-05-20 23:03:05.859 | INFO     | __main__:main:136 - ==================================
+2025-05-20 23:03:05.859 | INFO     | __main__:main:137 - FINISHED prepare_sales_data.py
+2025-05-20 23:03:05.859 | INFO     | __main__:main:138 - ==================================
+2025-05-20 23:04:00.002 | INFO     | __main__:main:171 - ==================================
+2025-05-20 23:04:00.002 | INFO     | __main__:main:172 - STARTING prepare_customers_data.py
+2025-05-20 23:04:00.002 | INFO     | __main__:main:173 - ==================================
+2025-05-20 23:04:00.002 | INFO     | __main__:main:175 - Root         : /Users/purnabiswa/Repo/smart-store-purna
+2025-05-20 23:04:00.002 | INFO     | __main__:main:176 - data/raw     : /Users/purnabiswa/Repo/smart-store-purna/data/raw
+2025-05-20 23:04:00.002 | INFO     | __main__:main:177 - data/prepared: /Users/purnabiswa/Repo/smart-store-purna/data/prepared
+2025-05-20 23:04:00.002 | INFO     | __main__:main:178 - scripts      : /Users/purnabiswa/Repo/smart-store-purna/scripts
+2025-05-20 23:04:00.003 | INFO     | __main__:read_raw_data:58 - READING: /Users/purnabiswa/Repo/smart-store-purna/data/raw/customers_data.csv.
+2025-05-20 23:04:00.014 | INFO     | __main__:main:190 - Initial dataframe columns: customers_data
+2025-05-20 23:04:00.014 | INFO     | __main__:main:191 - Initial dataframe shape: (202, 1)
+2025-05-20 23:04:00.015 | INFO     | __main__:remove_duplicates:94 - FUNCTION START: remove_duplicates with dataframe shape=(202, 1)
+2025-05-20 23:04:00.018 | INFO     | __main__:remove_duplicates:105 - Original dataframe shape: (202, 1)
+2025-05-20 23:04:00.018 | INFO     | __main__:remove_duplicates:106 - Deduped  dataframe shape: (3, 1)
+2025-05-20 23:04:00.019 | INFO     | __main__:handle_missing_values:122 - FUNCTION START: handle_missing_values with dataframe shape=(3, 1)
+2025-05-20 23:04:00.019 | INFO     | __main__:handle_missing_values:126 - Total missing values before handling: 0
+2025-05-20 23:04:00.019 | INFO     | __main__:handle_missing_values:135 - Total missing values after handling: 0
+2025-05-20 23:04:00.019 | INFO     | __main__:handle_missing_values:136 - 3 records remaining after handling missing values.
+2025-05-20 23:04:00.020 | INFO     | __main__:remove_outliers:150 - FUNCTION START: remove_outliers with dataframe shape=(3, 1)
+2025-05-20 23:04:00.020 | INFO     | __main__:remove_outliers:158 - Removed 0 outlier rows
+2025-05-20 23:04:00.020 | INFO     | __main__:remove_outliers:159 - 3 records remaining after removing outliers.
+2025-05-20 23:04:00.020 | INFO     | __main__:save_prepared_data:76 - FUNCTION START: save_prepared_data with file_name=customers_prepared.csv, dataframe shape=(3, 1)
+2025-05-20 23:04:00.022 | INFO     | __main__:save_prepared_data:79 - Data saved to /Users/purnabiswa/Repo/smart-store-purna/data/prepared/customers_prepared.csv
+2025-05-20 23:04:00.022 | INFO     | __main__:main:214 - ==================================
+2025-05-20 23:04:00.022 | INFO     | __main__:main:215 - Original shape: (3, 1)
+2025-05-20 23:04:00.022 | INFO     | __main__:main:216 - Cleaned shape:  (202, 1)
+2025-05-20 23:04:00.022 | INFO     | __main__:main:217 - ==================================
+2025-05-20 23:04:00.022 | INFO     | __main__:main:218 - FINISHED prepare_customers_data.py
+2025-05-20 23:04:00.022 | INFO     | __main__:main:219 - ==================================
+2025-05-20 23:04:19.352 | INFO     | __main__:main:232 - ==================================
+2025-05-20 23:04:19.353 | INFO     | __main__:main:233 - STARTING prepare_products_data.py
+2025-05-20 23:04:19.353 | INFO     | __main__:main:234 - ==================================
+2025-05-20 23:04:19.353 | INFO     | __main__:main:236 - Root         : /Users/purnabiswa/Repo/smart-store-purna
+2025-05-20 23:04:19.353 | INFO     | __main__:main:237 - data/raw     : /Users/purnabiswa/Repo/smart-store-purna/data/raw
+2025-05-20 23:04:19.353 | INFO     | __main__:main:238 - data/prepared: /Users/purnabiswa/Repo/smart-store-purna/data/prepared
+2025-05-20 23:04:19.353 | INFO     | __main__:main:239 - scripts      : /Users/purnabiswa/Repo/smart-store-purna/scripts
+2025-05-20 23:04:19.353 | INFO     | __main__:read_raw_data:64 - FUNCTION START: read_raw_data with file_name=products_data.csv
+2025-05-20 23:04:19.353 | INFO     | __main__:read_raw_data:66 - Reading data from /Users/purnabiswa/Repo/smart-store-purna/data/raw/products_data.csv
+2025-05-20 23:04:19.361 | INFO     | __main__:read_raw_data:68 - Loaded dataframe with 101 rows and 1 columns
+2025-05-20 23:04:19.361 | INFO     | __main__:read_raw_data:64 - FUNCTION START: read_raw_data with file_name=products_data.csv
+2025-05-20 23:04:19.361 | INFO     | __main__:read_raw_data:66 - Reading data from /Users/purnabiswa/Repo/smart-store-purna/data/raw/products_data.csv
+2025-05-20 23:04:19.362 | INFO     | __main__:read_raw_data:68 - Loaded dataframe with 101 rows and 1 columns
+2025-05-20 23:04:19.362 | INFO     | __main__:main:254 - Initial dataframe columns: products_data
+2025-05-20 23:04:19.362 | INFO     | __main__:main:255 - Initial dataframe shape: (101, 1)
+2025-05-20 23:04:19.364 | INFO     | __main__:remove_duplicates:101 - FUNCTION START: remove_duplicates with dataframe shape=(101, 1)
+2025-05-20 23:04:19.366 | INFO     | __main__:remove_duplicates:111 - Removed 96 duplicate rows
+2025-05-20 23:04:19.366 | INFO     | __main__:remove_duplicates:112 - 5 records remaining after removing duplicates.
+2025-05-20 23:04:19.366 | INFO     | __main__:handle_missing_values:126 - FUNCTION START: handle_missing_values with dataframe shape=(5, 1)
+2025-05-20 23:04:19.367 | INFO     | __main__:handle_missing_values:131 - Missing values by column before handling:
+products_data    0
+dtype: int64
+2025-05-20 23:04:19.367 | INFO     | __main__:handle_missing_values:145 - Missing values by column after handling:
+products_data    0
+dtype: int64
+2025-05-20 23:04:19.367 | INFO     | __main__:handle_missing_values:146 - 5 records remaining after handling missing values.
+2025-05-20 23:04:19.367 | INFO     | __main__:remove_outliers:160 - FUNCTION START: remove_outliers with dataframe shape=(5, 1)
+2025-05-20 23:04:19.367 | INFO     | __main__:remove_outliers:179 - Removed 0 outlier rows
+2025-05-20 23:04:19.367 | INFO     | __main__:remove_outliers:180 - 5 records remaining after removing outliers.
+2025-05-20 23:04:19.367 | INFO     | __main__:validate_data:216 - FUNCTION START: validate_data with dataframe shape=(5, 1)
+2025-05-20 23:04:19.367 | INFO     | __main__:validate_data:225 - Data validation complete
+2025-05-20 23:04:19.367 | INFO     | __main__:standardize_formats:193 - FUNCTION START: standardize_formats with dataframe shape=(5, 1)
+2025-05-20 23:04:19.367 | INFO     | __main__:standardize_formats:203 - Completed standardizing formats
+2025-05-20 23:04:19.368 | INFO     | __main__:save_prepared_data:86 - FUNCTION START: save_prepared_data with file_name=products_prepared.csv, dataframe shape=(5, 1)
+2025-05-20 23:04:19.372 | INFO     | __main__:save_prepared_data:89 - Data saved to /Users/purnabiswa/Repo/smart-store-purna/data/prepared/products_prepared.csv
+2025-05-20 23:04:19.372 | INFO     | __main__:main:284 - ==================================
+2025-05-20 23:04:19.372 | INFO     | __main__:main:285 - Original shape: (5, 1)
+2025-05-20 23:04:19.372 | INFO     | __main__:main:286 - Cleaned shape:  (101, 1)
+2025-05-20 23:04:19.372 | INFO     | __main__:main:287 - ==================================
+2025-05-20 23:04:19.373 | INFO     | __main__:main:288 - FINISHED prepare_products_data.py
+2025-05-20 23:04:19.373 | INFO     | __main__:main:289 - ==================================
+2025-05-20 23:32:15.354 | INFO     | __main__:main:171 - ==================================
+2025-05-20 23:32:15.355 | INFO     | __main__:main:172 - STARTING prepare_customers_data.py
+2025-05-20 23:32:15.355 | INFO     | __main__:main:173 - ==================================
+2025-05-20 23:32:15.355 | INFO     | __main__:main:175 - Root         : /Users/purnabiswa/Repo/smart-store-purna
+2025-05-20 23:32:15.355 | INFO     | __main__:main:176 - data/raw     : /Users/purnabiswa/Repo/smart-store-purna/data/raw
+2025-05-20 23:32:15.355 | INFO     | __main__:main:177 - data/prepared: /Users/purnabiswa/Repo/smart-store-purna/data/prepared
+2025-05-20 23:32:15.355 | INFO     | __main__:main:178 - scripts      : /Users/purnabiswa/Repo/smart-store-purna/scripts
+2025-05-20 23:32:15.355 | INFO     | __main__:read_raw_data:58 - READING: /Users/purnabiswa/Repo/smart-store-purna/data/raw/customers_data.csv.
+2025-05-20 23:32:15.362 | INFO     | __main__:main:190 - Initial dataframe columns: customers_data
+2025-05-20 23:32:15.362 | INFO     | __main__:main:191 - Initial dataframe shape: (202, 1)
+2025-05-20 23:32:15.362 | INFO     | __main__:remove_duplicates:94 - FUNCTION START: remove_duplicates with dataframe shape=(202, 1)
+2025-05-20 23:32:15.364 | INFO     | __main__:remove_duplicates:105 - Original dataframe shape: (202, 1)
+2025-05-20 23:32:15.364 | INFO     | __main__:remove_duplicates:106 - Deduped  dataframe shape: (3, 1)
+2025-05-20 23:32:15.364 | INFO     | __main__:handle_missing_values:122 - FUNCTION START: handle_missing_values with dataframe shape=(3, 1)
+2025-05-20 23:32:15.365 | INFO     | __main__:handle_missing_values:126 - Total missing values before handling: 0
+2025-05-20 23:32:15.365 | INFO     | __main__:handle_missing_values:135 - Total missing values after handling: 0
+2025-05-20 23:32:15.365 | INFO     | __main__:handle_missing_values:136 - 3 records remaining after handling missing values.
+2025-05-20 23:32:15.365 | INFO     | __main__:remove_outliers:150 - FUNCTION START: remove_outliers with dataframe shape=(3, 1)
+2025-05-20 23:32:15.365 | INFO     | __main__:remove_outliers:158 - Removed 0 outlier rows
+2025-05-20 23:32:15.365 | INFO     | __main__:remove_outliers:159 - 3 records remaining after removing outliers.
+2025-05-20 23:32:15.365 | INFO     | __main__:save_prepared_data:76 - FUNCTION START: save_prepared_data with file_name=customers_prepared.csv, dataframe shape=(3, 1)
+2025-05-20 23:32:15.368 | INFO     | __main__:save_prepared_data:79 - Data saved to /Users/purnabiswa/Repo/smart-store-purna/data/prepared/customers_prepared.csv
+2025-05-20 23:32:15.368 | INFO     | __main__:main:214 - ==================================
+2025-05-20 23:32:15.368 | INFO     | __main__:main:215 - Original shape: (3, 1)
+2025-05-20 23:32:15.368 | INFO     | __main__:main:216 - Cleaned shape:  (202, 1)
+2025-05-20 23:32:15.368 | INFO     | __main__:main:217 - ==================================
+2025-05-20 23:32:15.368 | INFO     | __main__:main:218 - FINISHED prepare_customers_data.py
+2025-05-20 23:32:15.368 | INFO     | __main__:main:219 - ==================================
