@@ -1,7 +1,6 @@
-customers_data
 CustomerID,Name,Region,JoinDate,Loyalty Points,CustomerSegment
 1000,Robert Gomez,West,2024-02-25,23,VIP
-1001,John Silva,East,2020-12-01,26,Regular
+1001,John Silva,East,2020-12-01,26,25.00
 1002,Mark Marshall,Central,2020-08-08,321,VIP
 1003,David Brennan,North,2020-05-21,67,VIP
 1004,Kerry Collins,North,2023-09-12,90,VIP

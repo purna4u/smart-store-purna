@@ -225,3 +225,54 @@ dtype: int64
 2025-05-20 23:32:15.368 | INFO     | __main__:main:217 - ==================================
 2025-05-20 23:32:15.368 | INFO     | __main__:main:218 - FINISHED prepare_customers_data.py
 2025-05-20 23:32:15.368 | INFO     | __main__:main:219 - ==================================
+2025-05-21 22:32:37.446 | INFO     | __main__:main:100 - ====================================
+2025-05-21 22:32:37.446 | INFO     | __main__:main:101 - STARTING prepare_products_data.py
+2025-05-21 22:32:37.446 | INFO     | __main__:main:102 - ====================================
+2025-05-21 22:32:37.447 | INFO     | __main__:read_raw_data:47 - Reading data from C:\Repos\project1\smart-store-purna\data\raw\products_data.csv
+2025-05-21 22:32:37.455 | INFO     | __main__:main:113 - Initial shape: (101, 1)
+2025-05-21 22:32:37.455 | INFO     | __main__:remove_duplicates:62 - Removing duplicate product records...
+2025-05-21 22:32:37.456 | INFO     | __main__:remove_duplicates:65 - Shape after deduplication: (7, 1)
+2025-05-21 22:32:37.456 | INFO     | __main__:handle_missing_values:69 - Handling missing values in product data...
+2025-05-21 22:32:37.457 | INFO     | __main__:handle_missing_values:71 - Missing values before: 0
+2025-05-21 22:32:37.457 | INFO     | __main__:handle_missing_values:80 - Missing values after: 0
+2025-05-21 22:32:37.457 | INFO     | __main__:remove_outliers:84 - Removing outliers from product data...
+2025-05-21 22:32:37.457 | INFO     | __main__:remove_outliers:92 - Shape after removing outliers: (7, 1)
+2025-05-21 22:32:37.459 | INFO     | __main__:save_prepared_data:59 - Cleaned data saved to C:\Repos\project1\smart-store-purna\data\prepared\products_prepared.csv
+2025-05-21 22:32:37.460 | INFO     | __main__:main:122 - ====================================
+2025-05-21 22:32:37.460 | INFO     | __main__:main:123 - Final shape: (7, 1)
+2025-05-21 22:32:37.460 | INFO     | __main__:main:124 - FINISHED prepare_products_data.py
+2025-05-21 22:32:37.460 | INFO     | __main__:main:125 - ====================================
+2025-05-21 22:39:01.060 | INFO     | __main__:main:100 - ====================================
+2025-05-21 22:39:01.060 | INFO     | __main__:main:101 - STARTING prepare_products_data.py
+2025-05-21 22:39:01.060 | INFO     | __main__:main:102 - ====================================
+2025-05-21 22:39:01.060 | INFO     | __main__:read_raw_data:47 - Reading data from C:\Repos\project1\smart-store-purna\data\raw\products_data.csv
+2025-05-21 22:39:01.064 | INFO     | __main__:main:113 - Initial shape: (101, 1)
+2025-05-21 22:39:01.065 | INFO     | __main__:remove_duplicates:62 - Removing duplicate product records...
+2025-05-21 22:39:01.065 | INFO     | __main__:remove_duplicates:65 - Shape after deduplication: (7, 1)
+2025-05-21 22:39:01.065 | INFO     | __main__:handle_missing_values:69 - Handling missing values in product data...
+2025-05-21 22:39:01.066 | INFO     | __main__:handle_missing_values:71 - Missing values before: 0
+2025-05-21 22:39:01.066 | INFO     | __main__:handle_missing_values:80 - Missing values after: 0
+2025-05-21 22:39:01.066 | INFO     | __main__:remove_outliers:84 - Removing outliers from product data...
+2025-05-21 22:39:01.066 | INFO     | __main__:remove_outliers:92 - Shape after removing outliers: (7, 1)
+2025-05-21 22:39:01.069 | INFO     | __main__:save_prepared_data:59 - Cleaned data saved to C:\Repos\project1\smart-store-purna\data\prepared\products_prepared.csv
+2025-05-21 22:39:01.069 | INFO     | __main__:main:122 - ====================================
+2025-05-21 22:39:01.069 | INFO     | __main__:main:123 - Final shape: (7, 1)
+2025-05-21 22:39:01.069 | INFO     | __main__:main:124 - FINISHED prepare_products_data.py
+2025-05-21 22:39:01.069 | INFO     | __main__:main:125 - ====================================
+2025-05-21 22:39:34.566 | INFO     | __main__:main:100 - ====================================
+2025-05-21 22:39:34.566 | INFO     | __main__:main:101 - STARTING prepare_products_data.py
+2025-05-21 22:39:34.566 | INFO     | __main__:main:102 - ====================================
+2025-05-21 22:39:34.566 | INFO     | __main__:read_raw_data:47 - Reading data from C:\Repos\project1\smart-store-purna\data\raw\products_data.csv
+2025-05-21 22:39:34.570 | INFO     | __main__:main:113 - Initial shape: (101, 1)
+2025-05-21 22:39:34.570 | INFO     | __main__:remove_duplicates:62 - Removing duplicate product records...
+2025-05-21 22:39:34.571 | INFO     | __main__:remove_duplicates:65 - Shape after deduplication: (7, 1)
+2025-05-21 22:39:34.571 | INFO     | __main__:handle_missing_values:69 - Handling missing values in product data...
+2025-05-21 22:39:34.572 | INFO     | __main__:handle_missing_values:71 - Missing values before: 0
+2025-05-21 22:39:34.572 | INFO     | __main__:handle_missing_values:80 - Missing values after: 0
+2025-05-21 22:39:34.572 | INFO     | __main__:remove_outliers:84 - Removing outliers from product data...
+2025-05-21 22:39:34.572 | INFO     | __main__:remove_outliers:92 - Shape after removing outliers: (7, 1)
+2025-05-21 22:39:34.575 | INFO     | __main__:save_prepared_data:59 - Cleaned data saved to C:\Repos\project1\smart-store-purna\data\prepared\products_prepared.csv
+2025-05-21 22:39:34.575 | INFO     | __main__:main:122 - ====================================
+2025-05-21 22:39:34.575 | INFO     | __main__:main:123 - Final shape: (7, 1)
+2025-05-21 22:39:34.575 | INFO     | __main__:main:124 - FINISHED prepare_products_data.py
+2025-05-21 22:39:34.575 | INFO     | __main__:main:125 - ====================================

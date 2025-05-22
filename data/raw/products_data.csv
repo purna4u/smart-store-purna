@@ -1,9 +1,8 @@
-products_data
 ProductID,ProductName,Category,UnitPrice,StockQuantity,Subcategory
-2000,Electronics-Be,Electronics,969.31,23,Electronics
+2000,Electronics-Be,Electronics,969.31,23,5.00
 2001,Electronics-Be,Clothing,412.35,23,Electronics
 2002,Office-Family,Clothing,866.0,43,Office
-2003,Electronics-Training,Clothing,385.18,5,Electronics
+2003,Electronics-Training,Clothing,385.18,5,6.10
 2004,Office-Where,Home,927.25,3,Office
 2005,Office-Huge,Home,428.78,6,Office
 2006,Office-Class,Clothing,198.0,7,Office
