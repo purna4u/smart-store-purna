@@ -76,11 +76,13 @@ As part of this assignment, additional columns were added to each dataset:
 - Git & GitHub
 - Excel (for simple data editing)
 
-## P3 Prepare Data for ETL
-# Overview
+
+
+# P3 Prepare Data for ETL
+## Overview
 This project focuses on preparing raw data for the ETL (Extract-Transform-Load) process by implementing reusable, standardized data cleaning techniques using Python and pandas. Clean data is critical for loading into a central data warehouse and performing accurate business intelligence (BI) analysis.
 
-## Data Cleaning Process
+### Data Cleaning Process
 The reusable `DataScrubber` class provides methods to:
 
 -  Remove duplicate records  
@@ -91,7 +93,7 @@ The reusable `DataScrubber` class provides methods to:
 
 These cleaning operations ensure consistency, accuracy, and reliability before transforming or loading data.
 
-## Scripts Used
+### Scripts Used
 
 | Script                      | Description                                                  |
 |----------------------------|--------------------------------------------------------------|
@@ -99,11 +101,11 @@ These cleaning operations ensure consistency, accuracy, and reliability before t
 | `scripts/data_prep.py`     | Main script that imports and uses `DataScrubber` to clean raw data |
 | `tests/test_data_scrubber.py` | Unit tests to validate the functionality of `DataScrubber` methods |
 
-## How to Run Tests
+### How to Run Tests
 Activate your virtual environment, then run:
 
 ```bash
-# Windows
+## Windows
 .\.venv\Scripts\activate
 python -m unittest tests/test_data_scrubber.py
 
