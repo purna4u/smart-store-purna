@@ -34,6 +34,7 @@ Ran the following scripts
     py scripts/data_prep.py
 
 ## Installed Pandas and loguru. Here are the commands
+
     pip install loguru
     pip install pandas
 
@@ -108,8 +109,48 @@ Activate your virtual environment, then run:
 ## Windows
 .\.venv\Scripts\activate
 python -m unittest tests/test_data_scrubber.py
+<details>
+<summary>P2 Assignment Details</summary>
+
+### Module 2: BI Python with External Packages
+
+This module focused on setting up the Python environment and preparing the project for data analysis:
+
+- Created a virtual environment using `venv`
+- Installed required packages (`pandas`, `loguru`)
+- Added a logger script in the `utils` folder
+- Added a data preparation script in the `scripts` folder
+- Pulled the latest changes from the repository
+- Ran the data preparation script to clean and preprocess the data
+
+**Key Commands Used:**
+```bash
+git pull
+py -m venv .venv
+.venv\Scripts\activate
+py -m pip install --upgrade pip setuptools wheel
+py -m pip install --upgrade -r requirements.txt --timeout 100
+py scripts/data_prep.py
+pip install loguru
+pip install pandas
+```
+
+**Pushing Changes to GitHub:**
+```bash
+git add .
+git commit -m "ran initial data_prep.py"
+git push -u origin main
+```
 
 
+#**P4: Successfully implemented and populated data warehouse with full schema and data**
+```bash
+git add .
+git commit -m "ran initial data_prep.py"
+git push -u origin main
+```
+### Screenshots for P4. Create and Populate DW Project
 
-
-
+![Customer Table](customer.jpg)
+![Product Table](product.jpg)
+![Sale Table](sale.jpg)
