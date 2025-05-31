@@ -143,10 +143,9 @@ git push -u origin main
 ```
 
 
-#**P4: Successfully implemented and populated data warehouse with full schema and data**
+### P4 Project: Successfully implemented and populated data warehouse with full schema and data
 
-### Screenshots for P4. Create and Populate DW Project
-
+**Screenshots for P4. Create and Populate DW Project**
 
 ![Customer Table](customer.jpg)
 ![Product Table](product.jpg)
