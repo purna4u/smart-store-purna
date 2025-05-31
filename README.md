@@ -144,12 +144,9 @@ git push -u origin main
 
 
 #**P4: Successfully implemented and populated data warehouse with full schema and data**
-```bash
-git add .
-git commit -m "ran initial data_prep.py"
-git push -u origin main
-```
+
 ### Screenshots for P4. Create and Populate DW Project
+
 
 ![Customer Table](customer.jpg)
 ![Product Table](product.jpg)
