@@ -162,7 +162,9 @@ In this project, I analyzed the Smart-Sales data warehouse using Power BI. I con
 ## Data Model
 
 
-![Data Model](<Model View.jpg>)
+![PowerBI Data Model](Model-View.jpg)
+![Top Customer Query Result](TopCustomer-QuerieResults.jpg)
+![Final Dashboard](Final-Dashboard.jpg)
 
 ## SQL Query & Analysis
 
@@ -179,9 +181,3 @@ JOIN customer c ON s.customer_id = c.customer_id
 GROUP BY c.name
 ORDER BY total_spent DESC
 LIMIT 10;
-
-![Top Customers](TopCustomer_QuerieResults.jpg)
-
-### Final Dashboard
-
-![Final Dashboard](<Final Dashboard.jpg>)
