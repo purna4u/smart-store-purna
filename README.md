@@ -150,3 +150,38 @@ git push -u origin main
 ![Customer Table](customer.jpg)
 ![Product Table](product.jpg)
 ![Sale Table](sale.jpg)
+
+
+
+# P5: Cross-Platform Reporting with Power BI & Spark
+
+## Project Overview
+
+In this project, I analyzed the Smart-Sales data warehouse using Power BI. I connected to the SQLite database via an ODBC connection, wrote a SQL query to aggregate customer spending, and built an interactive dashboard to visualize sales trends, regional performance, and top customers.
+
+## Data Model
+
+
+![Data Model](<Model View.jpg>)
+
+## SQL Query & Analysis
+
+To find the most valuable customers, I used the following SQL query within Power BI's Power Query Editor.
+
+### Top Customers Query
+
+```sql
+SELECT
+    c.name,
+    SUM(s.sale_amount) AS total_spent
+FROM sale s
+JOIN customer c ON s.customer_id = c.customer_id
+GROUP BY c.name
+ORDER BY total_spent DESC
+LIMIT 10;
+
+![Top Customers](TopCustomer_QuerieResults.jpg)
+
+### Final Dashboard
+
+![Final Dashboard](<Final Dashboard.jpg>)
