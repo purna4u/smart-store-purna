@@ -180,8 +180,7 @@ FROM sale s
 JOIN customer c ON s.customer_id = c.customer_id
 GROUP BY c.name
 ORDER BY total_spent DESC
-LIMIT 10;
-
+LIMIT 10;```
 
 # P6: BI Insights and Storytelling with OLAP
 
@@ -241,5 +240,9 @@ JOIN customer c ON s.customer_id = c.customer_id
 JOIN product p ON s.product_id = p.product_id;
 """
 df = pd.read_sql_query(query, conn)
+
+
+
+
 
 
