@@ -184,20 +184,19 @@ LIMIT 10;```
 
 # P6: BI Insights and Storytelling with OLAP
 
-This project performs an On-Line Analytical Processing (OLAP) analysis of the Smart Sales data warehouse. The goal is to answer a specific business question, handle data quality issues, and present a final, actionable insight supported by a visualization.
+`This project performs an On-Line Analytical Processing (OLAP) analysis of the Smart Sales data warehouse. The goal is to answer a specific business question, handle data quality issues, and present a final, actionable insight supported by a visualization.`
 
 
 ## Section 1: The Business Goal
 
-**Business Question:** How does sales performance differ across customer segments, and what are the peak purchasing days for our core 'Regular' customers?
+`**Business Question:** How does sales performance differ across customer segments, and what are the peak purchasing days for our core 'Regular' customers?
 
-**Why it matters:** Instead of generic marketing, understanding the behavior of specific customer segments allows for targeted promotions. By identifying when our most common customers ('Regulars') are most active, we can optimize ad spending and campaign timing to maximize engagement and revenue.
+**Why it matters:** Instead of generic marketing, understanding the behavior of specific customer segments allows for targeted promotions. By identifying when our most common customers ('Regulars') are most active, we can optimize ad spending and campaign timing to maximize engagement and revenue.`
 
----
 
 ## Section 2: Data Source
 
-This analysis queried the `smart_sales.db` SQLite data warehouse directly.
+`This analysis queried the `smart_sales.db` SQLite data warehouse directly.
 
 * **Tables Used:**
     * `sale`
@@ -207,11 +206,9 @@ This analysis queried the `smart_sales.db` SQLite data warehouse directly.
     * `sale`: `sale_date`, `sale_amount`, `customer_id`, `product_id`
     * `customer`: `customer_segment`, `customer_id`
     * `product`: `category`, `product_id`
-
----
-
+`
 ## Section 3: Tools
-
+`
 * **Tool:** Python 3.10
 * **Libraries:**
     * `sqlite3`: To connect to and query the SQLite data warehouse.
@@ -219,11 +216,11 @@ This analysis queried the `smart_sales.db` SQLite data warehouse directly.
     * `seaborn` & `matplotlib`: For creating the final data visualization to communicate the results.
 
 This Python-based toolkit was chosen for its power and flexibility, allowing for a reproducible workflow from raw data to final insight in a single script.
-
+`
 ---
 
 ## Section 4: Workflow & Logic
-
+`
 The project followed a systematic workflow involving data loading, extensive cleaning, transformation, and finally, analysis.
 
 **1. Data Loading:** Data was loaded by joining the `sale`, `customer`, and `product` tables using the following SQL query:
@@ -240,7 +237,7 @@ JOIN customer c ON s.customer_id = c.customer_id
 JOIN product p ON s.product_id = p.product_id;
 """
 df = pd.read_sql_query(query, conn)
-
+`
 
 
 
