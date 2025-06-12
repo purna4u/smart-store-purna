@@ -172,7 +172,7 @@ To find the most valuable customers, I used the following SQL query within Power
 
 ### Top Customers Query
 
-```sql
+``sql
 SELECT
     c.name,
     SUM(s.sale_amount) AS total_spent
@@ -180,11 +180,11 @@ FROM sale s
 JOIN customer c ON s.customer_id = c.customer_id
 GROUP BY c.name
 ORDER BY total_spent DESC
-LIMIT 10;```
+LIMIT 10;``
 
 # P6: BI Insights and Storytelling with OLAP
 
-`This project performs an On-Line Analytical Processing (OLAP) analysis of the Smart Sales data warehouse. The goal is to answer a specific business question, handle data quality issues, and present a final, actionable insight supported by a visualization.`
+This project performs an On-Line Analytical Processing (OLAP) analysis of the Smart Sales data warehouse. The goal is to answer a specific business question, handle data quality issues, and present a final, actionable insight supported by a visualization.
 
 
 ## Section 1: The Business Goal
@@ -237,7 +237,6 @@ JOIN customer c ON s.customer_id = c.customer_id
 JOIN product p ON s.product_id = p.product_id;
 """
 df = pd.read_sql_query(query, conn)
-`
 
 
 
