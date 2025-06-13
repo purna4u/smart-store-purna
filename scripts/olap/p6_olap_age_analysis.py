@@ -43,7 +43,6 @@ print(df.head())
 
 # =========================================
 # 3. DATA TRANSFORMATION
-# 3. DATA TRANSFORMATION
 # =========================================
 print("\nTransforming data...")
 # Convert 'sale_date' to datetime

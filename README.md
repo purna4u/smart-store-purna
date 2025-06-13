@@ -258,4 +258,8 @@ no such table: Resolved by using an inspection script to find the correct table 
 no such column: Resolved by using the same inspection script to find the correct column names (sale_date, not order_date) and adapting the analysis to use the existing customer_segment column instead of a non-existent age column.
 **Data Quality Errors:** The final and most complex challenge was handling corrupted data in the sale_date column. After discovering mixed formats and invalid values (e.g., a 13th month), the pd.to_datetime function was updated with errors='coerce' to programmatically identify and remove the problematic rows, allowing the analysis to proceed with clean data.
 
+### P6 pictures documentations
 
+![Picture 1](P6_pic1.png)
+![Picture 2](P6_pic2.png)
+![Picture 3](P6_pic3.png)
