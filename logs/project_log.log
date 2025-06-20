@@ -686,3 +686,137 @@ dtype: int64
 2025-05-22 10:49:26.479 | INFO     | __main__:main:287 - ==================================
 2025-05-22 10:49:26.480 | INFO     | __main__:main:288 - FINISHED prepare_products_data.py
 2025-05-22 10:49:26.480 | INFO     | __main__:main:289 - ==================================
+2025-06-19 21:18:05.245 | INFO     | __main__:main:111 - Starting data preparation pipeline …
+2025-06-19 21:18:05.246 | ERROR    | __main__:load_joined_data:47 - Database not found: C:\Repos\project1\smart-store-purna\data\smart_sales.db
+2025-06-19 21:18:05.247 | ERROR    | __main__:main:116 - No data loaded – pipeline aborted.
+2025-06-19 21:21:04.488 | INFO     | __main__:main:111 - Starting data preparation pipeline …
+2025-06-19 21:21:04.489 | ERROR    | __main__:load_joined_data:47 - Database not found: C:\Repos\project1\smart-store-purna\data\raw\smart_sales.db
+2025-06-19 21:21:04.490 | ERROR    | __main__:main:116 - No data loaded – pipeline aborted.
+2025-06-19 21:22:00.290 | INFO     | __main__:main:111 - Starting data preparation pipeline …
+2025-06-19 21:22:00.290 | INFO     | __main__:load_joined_data:50 - Connecting to SQLite DB …
+2025-06-19 21:47:40.062 | INFO     | __main__:<module>:39 - Data directories ensured: C:\Repos\project1\smart-store-purna\data\prepared, C:\Repos\project1\smart-store-purna\data\processed
+2025-06-19 21:47:40.062 | INFO     | __main__:main:273 - --- Starting custom BI project data preparation and aggregation ---
+2025-06-19 21:47:40.062 | INFO     | __main__:load_prepared_data:62 - Loading prepared sales data from: C:\Repos\project1\smart-store-purna\data\prepared\sales_prepared.csv
+2025-06-19 21:47:40.075 | INFO     | __main__:load_prepared_data:65 - Loaded 2001 rows for sales.
+2025-06-19 21:47:40.081 | INFO     | __main__:load_prepared_data:62 - Loading prepared products data from: C:\Repos\project1\smart-store-purna\data\prepared\products_prepared.csv
+2025-06-19 21:47:40.090 | INFO     | __main__:load_prepared_data:65 - Loaded 100 rows for products.
+2025-06-19 21:47:40.094 | INFO     | __main__:load_prepared_data:62 - Loading prepared customers data from: C:\Repos\project1\smart-store-purna\data\prepared\customers_prepared.csv
+2025-06-19 21:47:40.101 | INFO     | __main__:load_prepared_data:65 - Loaded 201 rows for customers.
+2025-06-19 21:47:40.105 | INFO     | __main__:merge_and_process_data:95 - Starting data merging and final processing...
+2025-06-19 21:47:40.105 | WARNING  | __main__:merge_and_process_data:130 - Products data missing or required columns ('ProductID', 'ProductCategory') not found. 'ProductCategory' will be 'Unknown'.
+2025-06-19 21:47:40.113 | INFO     | __main__:merge_and_process_data:142 - Merged customer data for 'Region' on 'CustomerID'.
+2025-06-19 21:47:40.113 | ERROR    | __main__:merge_and_process_data:164 - Date column 'OrderDate' not found after merge. Cannot extract Year/Quarter.
+2025-06-19 21:47:40.113 | WARNING  | __main__:merge_and_process_data:181 - Revenue ('Amount') or Cost ('Cost') columns not found. Cannot calculate Profit/Profit Margin.
+2025-06-19 21:47:40.114 | WARNING  | __main__:merge_and_process_data:192 - Units Sold column 'Quantity' not found. 'Units_Sold' will be 0.
+2025-06-19 21:47:40.115 | INFO     | __main__:merge_and_process_data:202 - Standardized categorical column: 'ProductCategory'.
+2025-06-19 21:47:40.117 | INFO     | __main__:merge_and_process_data:202 - Standardized categorical column: 'Region'.
+2025-06-19 21:47:40.117 | WARNING  | __main__:merge_and_process_data:204 - Final categorical column 'SalesChannel' not found after processing. Check merge logic/source columns.
+2025-06-19 21:47:40.117 | INFO     | __main__:merge_and_process_data:206 - Data merging and final processing complete.
+2025-06-19 21:47:40.122 | INFO     | __main__:merge_and_process_data:207 - Final Processed DataFrame info:
+%s
+2025-06-19 21:47:40.122 | INFO     | __main__:merge_and_process_data:208 - Final Processed DataFrame head:
+%s
+2025-06-19 21:47:40.122 | INFO     | __main__:aggregate_final_data:221 - Starting data aggregation for final analysis...
+2025-06-19 21:47:40.123 | ERROR    | __main__:aggregate_final_data:226 - No valid data for aggregation after filtering for Year/Quarter (Year > 0, Quarter > 0). Returning empty DFs.
+2025-06-19 21:47:40.124 | WARNING  | __main__:main:291 - Main aggregated DataFrame is empty. Not saving.
+2025-06-19 21:47:40.124 | WARNING  | __main__:main:298 - Sales channel share DataFrame is empty. Not saving.
+2025-06-19 21:47:40.124 | WARNING  | __main__:main:305 - Year-over-Year growth DataFrame is empty. Not saving.
+2025-06-19 21:47:40.124 | INFO     | __main__:main:307 - All data processing and aggregation steps completed successfully.
+2025-06-19 21:47:40.124 | INFO     | __main__:main:311 - --- Script Finished ---
+2025-06-19 21:51:01.161 | INFO     | __main__:<module>:39 - Data directories ensured: C:\Repos\project1\smart-store-purna\data\prepared, C:\Repos\project1\smart-store-purna\data\processed
+2025-06-19 21:51:01.161 | INFO     | __main__:main:273 - --- Starting custom BI project data preparation and aggregation ---
+2025-06-19 21:51:01.162 | INFO     | __main__:load_prepared_data:62 - Loading prepared sales data from: C:\Repos\project1\smart-store-purna\data\prepared\sales_prepared.csv
+2025-06-19 21:51:01.167 | INFO     | __main__:load_prepared_data:65 - Loaded 2001 rows for sales.
+2025-06-19 21:51:01.173 | INFO     | __main__:load_prepared_data:62 - Loading prepared products data from: C:\Repos\project1\smart-store-purna\data\prepared\products_prepared.csv
+2025-06-19 21:51:01.174 | INFO     | __main__:load_prepared_data:65 - Loaded 100 rows for products.
+2025-06-19 21:51:01.178 | INFO     | __main__:load_prepared_data:62 - Loading prepared customers data from: C:\Repos\project1\smart-store-purna\data\prepared\customers_prepared.csv
+2025-06-19 21:51:01.179 | INFO     | __main__:load_prepared_data:65 - Loaded 201 rows for customers.
+2025-06-19 21:51:01.182 | INFO     | __main__:merge_and_process_data:95 - Starting data merging and final processing...
+2025-06-19 21:51:01.183 | WARNING  | __main__:merge_and_process_data:130 - Products data missing or required columns ('ProductID', 'ProductCategory') not found. 'ProductCategory' will be 'Unknown'.
+2025-06-19 21:51:01.185 | INFO     | __main__:merge_and_process_data:142 - Merged customer data for 'Region' on 'CustomerID'.
+2025-06-19 21:51:01.185 | ERROR    | __main__:merge_and_process_data:164 - Date column 'OrderDate' not found after merge. Cannot extract Year/Quarter.
+2025-06-19 21:51:01.186 | WARNING  | __main__:merge_and_process_data:181 - Revenue ('Amount') or Cost ('Cost') columns not found. Cannot calculate Profit/Profit Margin.
+2025-06-19 21:51:01.186 | WARNING  | __main__:merge_and_process_data:192 - Units Sold column 'Quantity' not found. 'Units_Sold' will be 0.
+2025-06-19 21:51:01.187 | INFO     | __main__:merge_and_process_data:202 - Standardized categorical column: 'ProductCategory'.
+2025-06-19 21:51:01.188 | INFO     | __main__:merge_and_process_data:202 - Standardized categorical column: 'Region'.
+2025-06-19 21:51:01.188 | WARNING  | __main__:merge_and_process_data:204 - Final categorical column 'SalesChannel' not found after processing. Check merge logic/source columns.
+2025-06-19 21:51:01.189 | INFO     | __main__:merge_and_process_data:206 - Data merging and final processing complete.
+2025-06-19 21:51:01.193 | INFO     | __main__:merge_and_process_data:207 - Final Processed DataFrame info:
+%s
+2025-06-19 21:51:01.193 | INFO     | __main__:merge_and_process_data:208 - Final Processed DataFrame head:
+%s
+2025-06-19 21:51:01.193 | INFO     | __main__:aggregate_final_data:221 - Starting data aggregation for final analysis...
+2025-06-19 21:51:01.194 | ERROR    | __main__:aggregate_final_data:226 - No valid data for aggregation after filtering for Year/Quarter (Year > 0, Quarter > 0). Returning empty DFs.
+2025-06-19 21:51:01.195 | WARNING  | __main__:main:291 - Main aggregated DataFrame is empty. Not saving.
+2025-06-19 21:51:01.195 | WARNING  | __main__:main:298 - Sales channel share DataFrame is empty. Not saving.
+2025-06-19 21:51:01.195 | WARNING  | __main__:main:305 - Year-over-Year growth DataFrame is empty. Not saving.
+2025-06-19 21:51:01.195 | INFO     | __main__:main:307 - All data processing and aggregation steps completed successfully.
+2025-06-19 21:51:01.195 | INFO     | __main__:main:311 - --- Script Finished ---
+2025-06-19 21:51:01.195 | INFO     | __main__:main:273 - --- Starting custom BI project data preparation and aggregation ---
+2025-06-19 21:51:01.196 | INFO     | __main__:load_prepared_data:62 - Loading prepared sales data from: C:\Repos\project1\smart-store-purna\data\prepared\sales_prepared.csv
+2025-06-19 21:51:01.199 | INFO     | __main__:load_prepared_data:65 - Loaded 2001 rows for sales.
+2025-06-19 21:51:01.205 | INFO     | __main__:load_prepared_data:62 - Loading prepared products data from: C:\Repos\project1\smart-store-purna\data\prepared\products_prepared.csv
+2025-06-19 21:51:01.207 | INFO     | __main__:load_prepared_data:65 - Loaded 100 rows for products.
+2025-06-19 21:51:01.210 | INFO     | __main__:load_prepared_data:62 - Loading prepared customers data from: C:\Repos\project1\smart-store-purna\data\prepared\customers_prepared.csv
+2025-06-19 21:51:01.212 | INFO     | __main__:load_prepared_data:65 - Loaded 201 rows for customers.
+2025-06-19 21:51:01.215 | INFO     | __main__:merge_and_process_data:342 - Starting data merging and final processing...
+2025-06-19 21:51:01.217 | INFO     | __main__:merge_and_process_data:388 - Merged sales with products data on 'ProductID'.
+2025-06-19 21:51:01.218 | INFO     | __main__:merge_and_process_data:393 - Renamed product column 'category' to 'ProductCategory'.
+2025-06-19 21:51:01.219 | INFO     | __main__:merge_and_process_data:414 - Merged customer data for 'Region' on 'CustomerID'.
+2025-06-19 21:51:01.222 | WARNING  | __main__:merge_and_process_data:427 - Dropped 1 rows due to invalid/missing dates in 'SaleDate'.
+2025-06-19 21:51:01.233 | INFO     | __main__:merge_and_process_data:432 - Extracted 'Year' and 'Quarter' from date column.
+2025-06-19 21:51:01.235 | WARNING  | __main__:merge_and_process_data:456 - Cost column not found. Assuming Total_Cost = Total_Revenue * 70% for demonstration.
+2025-06-19 21:51:01.248 | INFO     | __main__:merge_and_process_data:460 - Calculated 'Profit' and 'Profit_Margin'.
+2025-06-19 21:51:01.249 | WARNING  | __main__:merge_and_process_data:474 - Units Sold column 'Quantity' not found. 'Units_Sold' will be 0.
+2025-06-19 21:51:01.250 | INFO     | __main__:merge_and_process_data:486 - Standardized categorical column: 'ProductCategory'.
+2025-06-19 21:51:01.251 | INFO     | __main__:merge_and_process_data:486 - Standardized categorical column: 'Region'.
+2025-06-19 21:51:01.252 | INFO     | __main__:merge_and_process_data:486 - Standardized categorical column: 'sales_channel'.
+2025-06-19 21:51:01.253 | INFO     | __main__:merge_and_process_data:503 - Data merging and final processing complete.
+2025-06-19 21:51:01.256 | INFO     | __main__:merge_and_process_data:504 - Final Processed DataFrame info:
+%s
+2025-06-19 21:51:01.256 | INFO     | __main__:merge_and_process_data:505 - Final Processed DataFrame head:
+%s
+2025-06-19 21:51:01.256 | INFO     | __main__:aggregate_final_data:221 - Starting data aggregation for final analysis...
+2025-06-19 21:51:01.262 | INFO     | __main__:aggregate_final_data:240 - Main aggregated profit data head:
+%s
+2025-06-19 21:51:01.262 | INFO     | __main__:aggregate_final_data:243 - Aggregating for Sales Channel Share...
+2025-06-19 22:11:05.121 | INFO     | __main__:<module>:39 - Data directories ensured: C:\Repos\project1\smart-store-purna\data\prepared, C:\Repos\project1\smart-store-purna\data\processed
+2025-06-19 22:12:56.478 | INFO     | __main__:<module>:39 - Data directories ensured: C:\Repos\project1\smart-store-purna\data\prepared, C:\Repos\project1\smart-store-purna\data\processed
+2025-06-19 22:12:56.478 | INFO     | __main__:main:307 - --- Starting custom BI project data preparation and aggregation script ---
+2025-06-19 22:12:56.478 | INFO     | __main__:load_prepared_data:62 - Loading prepared sales data from: C:\Repos\project1\smart-store-purna\data\prepared\sales_prepared.csv
+2025-06-19 22:12:56.484 | INFO     | __main__:load_prepared_data:65 - Loaded 2001 rows for sales.
+2025-06-19 22:12:56.490 | INFO     | __main__:load_prepared_data:62 - Loading prepared products data from: C:\Repos\project1\smart-store-purna\data\prepared\products_prepared.csv
+2025-06-19 22:12:56.492 | INFO     | __main__:load_prepared_data:65 - Loaded 100 rows for products.
+2025-06-19 22:12:56.495 | INFO     | __main__:load_prepared_data:62 - Loading prepared customers data from: C:\Repos\project1\smart-store-purna\data\prepared\customers_prepared.csv
+2025-06-19 22:12:56.496 | INFO     | __main__:load_prepared_data:65 - Loaded 201 rows for customers.
+2025-06-19 22:12:56.500 | INFO     | __main__:merge_and_process_data:95 - Starting data merging and final processing...
+2025-06-19 22:12:56.502 | INFO     | __main__:merge_and_process_data:128 - Merged sales with products data on 'ProductID'.
+2025-06-19 22:12:56.502 | INFO     | __main__:merge_and_process_data:133 - Renamed product column 'category' to 'ProductCategory'.
+2025-06-19 22:12:56.504 | INFO     | __main__:merge_and_process_data:148 - Merged customer data for 'Region' on 'CustomerID'.
+2025-06-19 22:12:56.507 | WARNING  | __main__:merge_and_process_data:161 - Dropped 1 rows due to invalid/missing dates in 'SaleDate'.
+2025-06-19 22:12:56.508 | INFO     | __main__:merge_and_process_data:166 - Extracted 'Year' and 'Quarter' from date column.
+2025-06-19 22:12:56.509 | WARNING  | __main__:merge_and_process_data:187 - Cost column not found. Assuming Total_Cost = Total_Revenue * 70% for demonstration.
+2025-06-19 22:12:56.521 | INFO     | __main__:merge_and_process_data:191 - Calculated 'Profit' and 'Profit_Margin'.
+2025-06-19 22:12:56.522 | WARNING  | __main__:merge_and_process_data:206 - Units Sold column 'Quantity' not found. 'Units_Sold' will be 0. Please verify your sales data or document this limitation.
+2025-06-19 22:12:56.523 | INFO     | __main__:merge_and_process_data:217 - Standardized categorical column: 'ProductCategory'.
+2025-06-19 22:12:56.524 | INFO     | __main__:merge_and_process_data:217 - Standardized categorical column: 'Region'.
+2025-06-19 22:12:56.525 | INFO     | __main__:merge_and_process_data:217 - Standardized categorical column: 'sales_channel'.
+2025-06-19 22:12:56.526 | INFO     | __main__:merge_and_process_data:237 - Data merging and final processing complete.
+2025-06-19 22:12:56.529 | INFO     | __main__:merge_and_process_data:238 - Final Processed DataFrame info:
+%s
+2025-06-19 22:12:56.529 | INFO     | __main__:merge_and_process_data:239 - Final Processed DataFrame head:
+%s
+2025-06-19 22:12:56.529 | INFO     | __main__:aggregate_final_data:252 - Starting data aggregation for final analysis...
+2025-06-19 22:12:56.534 | INFO     | __main__:aggregate_final_data:273 - Main aggregated profit data head:
+%s
+2025-06-19 22:12:56.534 | INFO     | __main__:aggregate_final_data:276 - Aggregating for Sales Channel Share...
+2025-06-19 22:12:56.537 | INFO     | __main__:aggregate_final_data:283 - Sales Channel Share data:
+%s
+2025-06-19 22:12:56.537 | INFO     | __main__:aggregate_final_data:286 - Aggregating for Year-over-Year Growth by Product Category...
+2025-06-19 22:12:56.549 | INFO     | __main__:aggregate_final_data:294 - Year-over-Year Growth data head:
+%s
+2025-06-19 22:12:56.552 | INFO     | __main__:main:323 - Main aggregated data saved to: C:\Repos\project1\smart-store-purna\data\processed\profit_by_category_region_quarter_agg.csv
+2025-06-19 22:12:56.553 | INFO     | __main__:main:330 - Sales channel share data saved to: C:\Repos\project1\smart-store-purna\data\processed\sales_channel_share_agg.csv
+2025-06-19 22:12:56.554 | INFO     | __main__:main:337 - Year-over-Year growth data saved to: C:\Repos\project1\smart-store-purna\data\processed\yoy_growth_agg.csv
+2025-06-19 22:12:56.554 | INFO     | __main__:main:341 - All data processing and aggregation steps completed successfully.
+2025-06-19 22:12:56.554 | INFO     | __main__:main:345 - --- Script Finished ---

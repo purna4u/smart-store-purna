@@ -263,3 +263,98 @@ no such column: Resolved by using the same inspection script to find the correct
 ![Picture 1](P6_pic1.png)
 ![Picture 2](P6_pic2.png)
 ![Picture 3](P6_pic3.png)
+
+
+# P7. Custom BI Project: Profitability Analysis by Category, Region, and Quarter
+## Project Overview
+
+This project develops a custom Business Intelligence (BI) solution to analyze product profitability across different regions and quarters. The goal is to provide actionable insights for optimizing business strategies, inventory, and marketing efforts.
+
+### Section 1. The Business Goal
+
+**Business Question:** Identify the most profitable product category by region and quarter.
+
+**Why it matters:** Understanding granular profitability helps optimize inventory, tailor marketing strategies, maximize profits, and identify growth opportunities by focusing resources where they yield the highest returns.
+
+### Section 2. Data Source
+
+The project utilizes three prepared CSV datasets located in the `data/prepared/` directory:
+* `sales_prepared.csv`: Transactional data (SaleDate, SaleAmount, sales_channel, CustomerID, ProductID).
+* `products_prepared.csv`: Product details (productid, category).
+* `customers_prepared.csv`: Customer information (CustomerID, Region).
+
+## Section 3. Tools Used
+
+* **Python 3.x**:
+    * **Pandas**: For data loading, merging, transformation, and aggregation.
+    * **Pathlib, Logging**: For robust file path management and script execution logging.
+* **Power BI Desktop**: For interactive data visualization and dashboarding.
+* **VS Code**: Integrated Development Environment.
+* **Git / GitHub**: Version control.
+
+## Section 4. Workflow & Logic
+
+The BI solution involved a Python script (`scripts/data_prep.py`) to process and prepare the data, followed by visualization in Power BI.
+
+1.  **Data Loading & Merging:**
+    * Individual prepared CSVs (sales, products, customers) were loaded into Pandas DataFrames.
+    * These DataFrames were merged (`sales` with `products` on `ProductID`; then with `customers` on `CustomerID`) to create a unified dataset containing all necessary dimensions (Product Category, Region, Sales Channel, Date) and metrics.
+
+2.  **Data Transformation & Calculation:**
+    * **Date Extraction:** `SaleDate` was converted to datetime objects, and `Year` and `Quarter` were extracted. Invalid date entries were handled.
+    * **Revenue Calculation:** `Total_Revenue` was derived from `SaleAmount`.
+    * **Profit Calculation (with Assumption):** As no direct `Cost` column was available in the sales data, `Total_Cost` was **assumed to be 70% of `Total_Revenue`** for demonstration purposes. `Profit` and `Profit_Margin` were then calculated based on this assumption.
+    * **Units Sold (Limitation):** The `Quantity` (Units Sold) column was not found in the sales data; therefore, `Units_Sold` defaulted to `0`.
+    * **Categorical Standardization:** Product categories, regions, and sales channels were standardized (cleaned, title-cased, NaNs replaced with 'Unknown') for consistency.
+
+3.  **Data Aggregation:**
+   
+
+## The BI solution involved a Python script (`scripts/data_prep.py`) to process and prepare the data, followed by visualization in Power BI.
+
+1.  **Data Loading & Merging:**
+    * Individual prepared CSVs (sales, products, customers) were loaded into Pandas DataFrames.
+    * These DataFrames were merged (`sales` with `products` on `ProductID`; then with `customers` on `CustomerID`) to create a unified dataset containing all necessary dimensions (Product Category, Region, Sales Channel, Date) and metrics.
+
+2.  **Data Transformation & Calculation:**
+    * **Date Extraction:** `SaleDate` was converted to datetime objects, and `Year` and `Quarter` were extracted. Invalid date entries were handled.
+    * **Revenue Calculation:** `Total_Revenue` was derived from `SaleAmount`.
+    * **Profit Calculation (with Assumption):** As no direct `Cost` column was available in the sales data, `Total_Cost` was **assumed to be 70% of `Total_Revenue`** for demonstration purposes. `Profit` and `Profit_Margin` were then calculated based on this assumption.
+    * **Units Sold (Limitation):** The `Quantity` (Units Sold) column was not found in the sales data; therefore, `Units_Sold` defaulted to `0`.
+    * **Categorical Standardization:** Product categories, regions, and sales channels were standardized (cleaned, title-cased, NaNs replaced with 'Unknown') for consistency.
+
+3.  **Data Aggregation:**
+    * The processed data was aggregated into three key datasets for Power BI:
+        * **Main Aggregation:** Total Revenue, Profit, Units Sold, and Average Profit Margin by **Year, Quarter, Region, and Product Category**.
+        * **Sales Channel Share:** Total Revenue by **Sales Channel**.
+        * **Year-over-Year Growth:** Total Revenue and YoY Growth Percentage by **Year and Product Category**.
+
+4.  **Data Saving:** The aggregated datasets were saved as CSV files to the `data/processed/` directory.
+
+## Section 5. Results (narrative + visualizations)
+Screenshots: ![P7 Screenshot](<P7 screenshot.jpg>)
+
+## Section 6. Suggested Business Action
+
+Based on the analysis, the business should:
+* **Strategically Invest:** Increase investment (marketing, inventory) in high-profit category-region-quarter combinations (e.g., Electronics in West, Q4).
+* **Optimize Underperforming Areas:** Investigate low-margin categories/regions (e.g., Clothing in Central) to identify root causes (pricing, costs) and re-evaluate strategy.
+* **Leverage Seasonal Peaks:** Pre-plan resources and campaigns to maximize returns during peak quarters.
+* **Refine Channel Strategy:** Continue to optimize and invest in the most successful sales channels while assessing opportunities or challenges in others.
+
+## Section 7. Challenges
+
+1.  **Data Integration:** Merging three separate data files (`sales`, `products`, `customers`) with different structures and column names required careful matching and transformation.
+2.  **Missing Core Metrics (Cost & Quantity):**
+    * The absence of a direct `Cost` column necessitated a **critical assumption (70% of revenue as cost)** for profit calculation, impacting accuracy.
+    * The lack of a `Quantity` column meant `Units_Sold` could not be accurately calculated and defaulted to `0`.
+3.  **Data Inconsistencies:** Mismatched column casing (`productid` vs. `ProductID`), non-standard date formats, and `NaN` values in categorical fields required robust cleaning and standardization.
+
+## Section 8. Ethical Considerations
+
+1.  **Data Accuracy & Assumptions:** Relying on an **assumed cost** for profitability can lead to misleading insights and poor business decisions if not explicitly acknowledged and validated.
+2.  **Bias in Analysis:** Over-focusing solely on "most profitable" areas could lead to resource withdrawal from other areas, potentially harming specific customer segments or regions that might be strategically important or underserved.
+3.  **Data Privacy:** While not directly handled in this project's final output, the underlying raw data likely contains PII (`CustomerID`). Ensuring robust data anonymization and secure handling in a full pipeline is paramount to protect privacy.
+4.  **Transparency:** All assumptions and limitations (e.g., assumed cost, missing units sold) are explicitly documented to maintain transparency and prevent misinterpretation of insights.
+
+
